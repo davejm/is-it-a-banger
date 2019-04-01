@@ -8,7 +8,7 @@ class SelectedArtist extends Component {
         const {name, image, ...others} = this.props;
         return (
             <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}} {...others}>
-                <img src={image} alt={name} style={{maxHeight: 600, marginBottom: 20}} />
+                <img src={image} alt={name} style={{maxHeight: 600, maxWidth: '100%', marginBottom: 20}} />
                 <Typography variant="title">Selected track: {name}</Typography>
             </div>
         );
